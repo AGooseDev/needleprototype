@@ -1,0 +1,118 @@
+[gd_scene format=3 uid="uid://4pqund3nukl7"]
+
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://Scenes/player.tscn" id="1_v1qfn"]
+[ext_resource type="Script" uid="uid://b3e4x0uuxwmvy" path="res://Scripts/test_room.cs" id="1_wjtap"]
+[ext_resource type="Script" uid="uid://bnpqaxkr1vkm5" path="res://Scripts/textbox_trigger.cs" id="2_v1qfn"]
+[ext_resource type="Shader" uid="uid://dm34gfy7b51tk" path="res://Assets/shaders/new_shader.gdshader" id="3_6whob"]
+[ext_resource type="Texture2D" uid="uid://bocvy8gaiexow" path="res://Assets/tres/new_noise_texture_2d.tres" id="3_hh5uf"]
+[ext_resource type="Script" uid="uid://dmlgv8tbwp205" path="res://Scripts/enemy.cs" id="5_tx0tn"]
+[ext_resource type="Texture2D" uid="uid://bv26cqnf8kp03" path="res://Assets/txt.png" id="6_wjtap"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fkpbn"]
+size = Vector2(20.085468, 22)
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_6s3bt"]
+vertices = PackedVector2Array(250.15625, 158.5625, 311.53906, 142.75781, 498.46094, 142.75781, 429.15625, 185.4375, 188.84375, 185.4375, 159.53906, 406.3203, 545.22656, 430.82813, -75.921875, 440.03125, 62.460938, 406.3203, 498.46094, 7.2421875, 541.6406, -39.46875, 429.15625, 258.5625, 9.84375, 158.5625, -66.921875, -40.398438, 311.53906, 7.2421875, 188.84375, 258.5625, 159.53906, 257.6797, 250.15625, 85.4375, 9.84375, 85.4375, 62.460938, 257.6797)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 6, 7, 8), PackedInt32Array(2, 9, 10, 6), PackedInt32Array(2, 6, 11, 3), PackedInt32Array(12, 0, 4), PackedInt32Array(13, 10, 9, 14), PackedInt32Array(11, 6, 5, 15), PackedInt32Array(15, 5, 16, 4), PackedInt32Array(8, 7, 13, 12), PackedInt32Array(1, 0, 17, 14), PackedInt32Array(13, 14, 17, 18), PackedInt32Array(12, 4, 16, 19), PackedInt32Array(13, 18, 12), PackedInt32Array(8, 12, 19)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-93, -67, -103, 467, 572, 457, 568, -66)])
+agent_radius = 26.56
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kdubu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ket1"]
+size = Vector2(33, 33)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hh5uf"]
+shader = ExtResource("3_6whob")
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_tx0tn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6s3bt"]
+size = Vector2(151, 20)
+
+[node name="Node2D" type="Node2D" unique_id=678688559]
+script = ExtResource("1_wjtap")
+
+[node name="Player" parent="." unique_id=766630638 instance=ExtResource("1_v1qfn")]
+position = Vector2(159, 91)
+min = PackedInt32Array(-320, -180)
+max = PackedInt32Array(640, 360)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=144802400]
+position = Vector2(130, 122)
+scale = Vector2(9.36, 1)
+script = ExtResource("2_v1qfn")
+txtarr0 = Array[String](["You seem to notice a diary on the floor. You peer at it to see its author...", "But it was incinerated."])
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=575535774]
+shape = SubResource("RectangleShape2D_fkpbn")
+debug_color = Color(0.95686275, 0, 0.5411765, 0.41960785)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1983149750]
+navigation_polygon = SubResource("NavigationPolygon_6s3bt")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="NavigationRegion2D" unique_id=1753213877]
+position = Vector2(111.00003, 332)
+rotation = 3.1415927
+scale = Vector2(2.1979685, -4.775688)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NavigationRegion2D/StaticBody2D4" unique_id=170504568]
+shape = SubResource("RectangleShape2D_kdubu")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="NavigationRegion2D" unique_id=664225872]
+position = Vector2(404.99988, 75.00003)
+scale = Vector2(6.689598, 4.119999)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NavigationRegion2D/StaticBody2D3" unique_id=936257736]
+shape = SubResource("RectangleShape2D_kdubu")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="NavigationRegion2D" unique_id=1756599159]
+position = Vector2(130, 122)
+scale = Vector2(9.36, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NavigationRegion2D/StaticBody2D" unique_id=1208881189]
+shape = SubResource("RectangleShape2D_kdubu")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="NavigationRegion2D" unique_id=2107459339]
+position = Vector2(309, 222)
+scale = Vector2(9.36, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NavigationRegion2D/StaticBody2D2" unique_id=1387313971]
+shape = SubResource("RectangleShape2D_kdubu")
+
+[node name="Enemy" type="CharacterBody2D" parent="." unique_id=1542585619]
+script = ExtResource("5_tx0tn")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy" unique_id=225724635]
+texture = ExtResource("6_wjtap")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=1609639995]
+shape = SubResource("RectangleShape2D_3ket1")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="Enemy" unique_id=778011773]
+avoidance_enabled = true
+
+[node name="Area2D" type="Area2D" parent="Enemy" unique_id=1712815460]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/Area2D" unique_id=1584964298]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_3ket1")
+
+[node name="NewNoiseTexture2d" type="Sprite2D" parent="." unique_id=238347250]
+material = SubResource("ShaderMaterial_hh5uf")
+position = Vector2(-341, -105)
+texture = ExtResource("3_hh5uf")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=475958564]
+position = Vector2(245, 63)
+collision_layer = 2
+physics_material_override = SubResource("PhysicsMaterial_tx0tn")
+gravity_scale = 0.0
+lock_rotation = true
+linear_damp = 7.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=376926180]
+position = Vector2(13.5, 0)
+shape = SubResource("RectangleShape2D_6s3bt")
+
+[connection signal="velocity_computed" from="Enemy/NavigationAgent2D" to="Enemy" method="_on_navigation_agent_2d_velocity_computed"]

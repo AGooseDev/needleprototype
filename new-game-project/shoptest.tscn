@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c7iepkat0c0fa"]
+
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://Scenes/player.tscn" id="1_yv0ph"]
+[ext_resource type="Texture2D" uid="uid://lcarjgl3ou5v" path="res://Assets/Sprite-0001-Recovered.png" id="2_0urmg"]
+
+[node name="Node2D" type="Node2D" unique_id=587466831]
+
+[node name="Sprite0001Recovered" type="Sprite2D" parent="." unique_id=1476781971]
+texture_filter = 1
+position = Vector2(160, 90)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_0urmg")
+
+[node name="Player" parent="." unique_id=766630638 instance=ExtResource("1_yv0ph")]
+position = Vector2(159, 91)
+state_override = 2

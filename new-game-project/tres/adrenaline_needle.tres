@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="inventory_item" format=3 uid="uid://c1aoleohdjjh2"]
+
+[ext_resource type="Script" uid="uid://drvkabk7naigj" path="res://Scripts/inventory_item.cs" id="1_o5rcu"]
+
+[resource]
+script = ExtResource("1_o5rcu")
+is_needle = true
+cc = 5.0
+metadata/_custom_type_script = "uid://drvkabk7naigj"

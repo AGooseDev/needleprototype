@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b328dvvfmko8b"]
+
+[ext_resource type="Texture2D" uid="uid://cuknbbtq4idmx" path="res://Assets/Sprite-0002.png" id="1_5bytl"]
+[ext_resource type="Script" uid="uid://bs3tagcjf38gn" path="res://Scripts/shoot_needle_adrenaline.cs" id="2_ed1uv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6s3bt"]
+size = Vector2(6, 3)
+
+[node name="shoot_needle" type="Sprite2D" unique_id=1139396131 groups=["adrenaline_needle"]]
+texture_filter = 1
+texture = ExtResource("1_5bytl")
+script = ExtResource("2_ed1uv")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=194187158 groups=["adrenaline_needle"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=765730658 groups=["adrenaline_needle"]]
+texture_filter = 1
+position = Vector2(2, 0.5)
+shape = SubResource("RectangleShape2D_6s3bt")

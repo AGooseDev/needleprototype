@@ -1,0 +1,7 @@
+ok so
+the player starts off with small hp right?
+they gain more max
+they take more hits to die
+however with each new level up they get a disadvantage
+
+i also want something to change often.
