@@ -3,8 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://Scenes/player.tscn" id="1_v1qfn"]
 [ext_resource type="Script" uid="uid://b3e4x0uuxwmvy" path="res://Scripts/test_room.cs" id="1_wjtap"]
 [ext_resource type="Script" uid="uid://bnpqaxkr1vkm5" path="res://Scripts/textbox_trigger.cs" id="2_v1qfn"]
-[ext_resource type="Shader" uid="uid://dm34gfy7b51tk" path="res://Assets/shaders/new_shader.gdshader" id="3_6whob"]
-[ext_resource type="Texture2D" uid="uid://bocvy8gaiexow" path="res://Assets/tres/new_noise_texture_2d.tres" id="3_hh5uf"]
 [ext_resource type="Script" uid="uid://dmlgv8tbwp205" path="res://Scripts/enemy.cs" id="5_tx0tn"]
 [ext_resource type="Texture2D" uid="uid://bv26cqnf8kp03" path="res://Assets/txt.png" id="6_wjtap"]
 
@@ -21,9 +19,6 @@ agent_radius = 26.56
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3ket1"]
 size = Vector2(33, 33)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_hh5uf"]
-shader = ExtResource("3_6whob")
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_tx0tn"]
 
@@ -97,11 +92,6 @@ avoidance_enabled = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/Area2D" unique_id=1584964298]
 position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_3ket1")
-
-[node name="NewNoiseTexture2d" type="Sprite2D" parent="." unique_id=238347250]
-material = SubResource("ShaderMaterial_hh5uf")
-position = Vector2(-341, -105)
-texture = ExtResource("3_hh5uf")
 
 [node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=475958564]
 position = Vector2(245, 63)

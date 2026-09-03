@@ -1,10 +1,108 @@
 [gd_scene format=3 uid="uid://be8qbmt0fe144"]
 
 [ext_resource type="Script" uid="uid://cevbmef8hk5um" path="res://Scripts/character_body_2d.cs" id="1_vgqql"]
+[ext_resource type="Script" uid="uid://drvkabk7naigj" path="res://Scripts/inventory_item.cs" id="2_igrcy"]
 [ext_resource type="Texture2D" uid="uid://u210uostq0s8" path="res://Assets/B.png" id="2_vgqql"]
 [ext_resource type="Texture2D" uid="uid://bv26cqnf8kp03" path="res://Assets/txt.png" id="2_x3wgy"]
 [ext_resource type="FontFile" uid="uid://cabcg3lbcsst3" path="res://Assets/fonts/editundo.ttf" id="3_3smsa"]
+[ext_resource type="Script" uid="uid://bk28f7rwkkbjx" path="res://Scripts/inventory.cs" id="3_8erm5"]
 [ext_resource type="Script" uid="uid://12w1omfjyukx" path="res://Scripts/player_cam.cs" id="3_fkybt"]
+[ext_resource type="Resource" uid="uid://c1aoleohdjjh2" path="res://tres/adrenaline_needle.tres" id="3_tx1dd"]
+[ext_resource type="Texture2D" uid="uid://bgw0yj85sep2g" path="res://Assets/zosiawalk.png" id="6_7dp3o"]
+[ext_resource type="Texture2D" uid="uid://bkfvc5m2gyol0" path="res://Assets/mns.png" id="6_8erm5"]
+[ext_resource type="Texture2D" uid="uid://b7k6kvvjnshid" path="res://Assets/pointer.png" id="8_f1ek2"]
+[ext_resource type="FontFile" uid="uid://grogek16j5ts" path="res://Assets/fonts/DePixelHalbfett.ttf" id="10_gymyn"]
+[ext_resource type="Texture2D" uid="uid://cotcyooit8o1m" path="res://Assets/Sprite-0005.png" id="12_fd4e3"]
+[ext_resource type="Shader" uid="uid://dm34gfy7b51tk" path="res://Assets/shaders/new_shader.gdshader" id="12_ukyrk"]
+[ext_resource type="Texture2D" uid="uid://bocvy8gaiexow" path="res://Assets/tres/new_noise_texture_2d.tres" id="13_7dp3o"]
+[ext_resource type="Texture2D" uid="uid://corbfa07uh26y" path="res://Assets/PBR.png" id="13_h4iuc"]
+[ext_resource type="Texture2D" uid="uid://drp8hiljqnwd7" path="res://Assets/Spri6.png" id="13_igrcy"]
+[ext_resource type="Shader" uid="uid://cd1hlkjql6s8" path="res://Assets/shaders/crt.gdshader" id="13_qqcod"]
+
+[sub_resource type="Resource" id="Resource_iq1sc"]
+script = ExtResource("3_8erm5")
+inv = Array[ExtResource("2_igrcy")]([ExtResource("3_tx1dd"), null, ExtResource("3_tx1dd"), null])
+metadata/_custom_type_script = "uid://bk28f7rwkkbjx"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4iuc"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fd4e3"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqcod"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_igrcy"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fs7ks"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dp3o"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_olqyp"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(1536, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpjfl"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bi64h"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ijsl"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(1152, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1odr"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(1280, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gysh"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(1408, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfarp"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(1536, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y6uwr"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(1664, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83xs0"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(1792, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ypfnu"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(1920, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xuaoq"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wohnl"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36dho"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yh6i2"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(896, 0, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q6r6c"]
 animations = [{
@@ -15,12 +113,193 @@ animations = [{
 "loop": 1,
 "name": &"default",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h4iuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fd4e3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qqcod")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_igrcy")
+}],
+"loop": 1,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fs7ks")
+}],
+"loop": 1,
+"name": &"idledown",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7dp3o")
+}],
+"loop": 1,
+"name": &"idleleft",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_olqyp")
+}],
+"loop": 1,
+"name": &"idleright",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wpjfl")
+}],
+"loop": 1,
+"name": &"idleup",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bi64h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ijsl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p1odr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gysh")
+}],
+"loop": 1,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vfarp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y6uwr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83xs0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ypfnu")
+}],
+"loop": 1,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xuaoq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wohnl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36dho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yh6i2")
+}],
+"loop": 1,
+"name": &"up",
+"speed": 5.0
 }]
 
 [sub_resource type="LabelSettings" id="LabelSettings_q6r6c"]
 line_spacing = 1.0
 font = ExtResource("3_3smsa")
 font_size = 14
+
+[sub_resource type="LabelSettings" id="LabelSettings_6s3bt"]
+font = ExtResource("3_3smsa")
+font_size = 14
+
+[sub_resource type="LabelSettings" id="LabelSettings_3ket1"]
+font = ExtResource("3_3smsa")
+font_size = 14
+
+[sub_resource type="LabelSettings" id="LabelSettings_fkpbn"]
+font = ExtResource("10_gymyn")
+font_size = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_qqo43"]
+font = ExtResource("10_gymyn")
+font_size = 5
+font_color = Color(0.6, 0.6901961, 0.33333334, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6s3bt"]
+shader = ExtResource("13_qqcod")
+shader_parameter/overlay = true
+shader_parameter/scanlines_opacity = 0.4
+shader_parameter/scanlines_width = 0.1450000068875
+shader_parameter/grille_opacity = 0.3
+shader_parameter/resolution = Vector2(1920, 1080)
+shader_parameter/pixelate = false
+shader_parameter/roll = true
+shader_parameter/roll_speed = 8.0
+shader_parameter/roll_size = 15.0
+shader_parameter/roll_variation = 1.8
+shader_parameter/distort_intensity = 0.0350000016625
+shader_parameter/noise_opacity = 0.2450000116375
+shader_parameter/noise_speed = 2.0
+shader_parameter/static_noise_intensity = 0.0430000020425
+shader_parameter/aberration = 0.01000004797499998
+shader_parameter/brightness = 1.4
+shader_parameter/discolor = true
+shader_parameter/warp_amount = 0.814000038665
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.5
+
+[sub_resource type="Animation" id="Animation_igrcy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_fs7ks"]
+resource_name = "new_animation"
+length = 7.733333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.23333333),
+"transitions": PackedFloat32Array(3.1383414, 0.3186409),
+"update": 0,
+"values": [Vector2(0, 180), Vector2(1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_l6n3p"]
+_data = {
+&"RESET": SubResource("Animation_igrcy"),
+&"new_animation": SubResource("Animation_fs7ks")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h4iuc"]
+shader = ExtResource("12_ukyrk")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
 size = Vector2(15, 14)
@@ -30,11 +309,13 @@ size = Vector2(10.90909, 14.545454)
 
 [node name="Player" type="CharacterBody2D" unique_id=766630638 groups=["Player"]]
 script = ExtResource("1_vgqql")
+inv = SubResource("Resource_iq1sc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1647182195]
 texture_filter = 1
 position = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_q6r6c")
+animation = &"idledown"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=64283420]
 position = Vector2(1, -1)
@@ -42,6 +323,242 @@ process_callback = 0
 position_smoothing_enabled = true
 position_smoothing_speed = 8.0
 script = ExtResource("3_fkybt")
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="Camera2D" unique_id=1189526628]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Camera2D/CanvasLayer3" unique_id=1289679457]
+texture_filter = 1
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 57.0
+offset_bottom = 58.0
+texture = ExtResource("6_8erm5")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+
+[node name="Label3" type="Label" parent="Camera2D/CanvasLayer3" unique_id=1300410926]
+texture_filter = 1
+offset_left = 25.0
+offset_top = 10.0
+offset_right = 72.0
+offset_bottom = 74.0
+text = "BAG
+medi.
+AZZI
+"
+label_settings = SubResource("LabelSettings_q6r6c")
+autowrap_mode = 3
+visible_characters_behavior = 1
+
+[node name="slt" type="NinePatchRect" parent="Camera2D/CanvasLayer3" unique_id=1494156638]
+texture_filter = 1
+offset_left = 72.0
+offset_top = 7.0
+offset_right = 96.0
+offset_bottom = 31.0
+texture = ExtResource("6_8erm5")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+
+[node name="Label4" type="Label" parent="Camera2D/CanvasLayer3/slt" unique_id=495215383]
+layout_mode = 0
+offset_top = 20.0
+offset_right = 47.0
+offset_bottom = 84.0
+text = "0"
+label_settings = SubResource("LabelSettings_q6r6c")
+autowrap_mode = 3
+visible_characters_behavior = 1
+
+[node name="TextureRect" type="TextureRect" parent="Camera2D/CanvasLayer3/slt" unique_id=591090402]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 21.0
+offset_bottom = 21.0
+
+[node name="slt2" type="NinePatchRect" parent="Camera2D/CanvasLayer3" unique_id=993318986]
+texture_filter = 1
+offset_left = 108.0
+offset_top = 7.0
+offset_right = 132.0
+offset_bottom = 31.0
+texture = ExtResource("6_8erm5")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+
+[node name="TextureRect" type="TextureRect" parent="Camera2D/CanvasLayer3/slt2" unique_id=118544270]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 21.0
+offset_bottom = 21.0
+
+[node name="Label5" type="Label" parent="Camera2D/CanvasLayer3/slt2" unique_id=725849455]
+layout_mode = 0
+offset_top = 20.0
+offset_right = 47.0
+offset_bottom = 84.0
+text = "0
+"
+label_settings = SubResource("LabelSettings_q6r6c")
+autowrap_mode = 3
+visible_characters_behavior = 1
+
+[node name="slt3" type="NinePatchRect" parent="Camera2D/CanvasLayer3" unique_id=1711603070]
+texture_filter = 1
+offset_left = 144.0
+offset_top = 7.0
+offset_right = 168.0
+offset_bottom = 31.0
+texture = ExtResource("6_8erm5")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+
+[node name="Label5" type="Label" parent="Camera2D/CanvasLayer3/slt3" unique_id=45448952]
+layout_mode = 0
+offset_top = 20.0
+offset_right = 47.0
+offset_bottom = 84.0
+text = "0"
+label_settings = SubResource("LabelSettings_q6r6c")
+autowrap_mode = 3
+visible_characters_behavior = 1
+
+[node name="TextureRect" type="TextureRect" parent="Camera2D/CanvasLayer3/slt3" unique_id=908856088]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 21.0
+offset_bottom = 21.0
+
+[node name="slt4" type="NinePatchRect" parent="Camera2D/CanvasLayer3" unique_id=589658077]
+texture_filter = 1
+offset_left = 180.0
+offset_top = 7.0
+offset_right = 204.0
+offset_bottom = 31.0
+texture = ExtResource("6_8erm5")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+
+[node name="TextureRect" type="TextureRect" parent="Camera2D/CanvasLayer3/slt4" unique_id=1524474508]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 21.0
+offset_bottom = 21.0
+
+[node name="Label4" type="Label" parent="Camera2D/CanvasLayer3/slt4" unique_id=519968624]
+layout_mode = 0
+offset_top = 20.0
+offset_right = 47.0
+offset_bottom = 84.0
+text = "0
+"
+label_settings = SubResource("LabelSettings_q6r6c")
+autowrap_mode = 3
+visible_characters_behavior = 1
+
+[node name="ColorRect" type="ColorRect" parent="Camera2D/CanvasLayer3" unique_id=1146049434]
+offset_top = 122.0
+offset_right = 320.0
+offset_bottom = 180.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="Camera2D/CanvasLayer3" unique_id=677840250]
+texture_filter = 1
+offset_left = 5.0
+offset_top = 127.0
+offset_right = 316.0
+offset_bottom = 177.0
+text = "*"
+label_settings = SubResource("LabelSettings_6s3bt")
+
+[node name="Label2" type="Label" parent="Camera2D/CanvasLayer3" unique_id=1660921397]
+texture_filter = 1
+offset_left = 17.0
+offset_top = 126.0
+offset_right = 317.0
+offset_bottom = 177.0
+text = "Adrenaline - A substance that activates fight or flight. dissorienting visually and etc. in medium amounts it is dangerous..."
+label_settings = SubResource("LabelSettings_3ket1")
+autowrap_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="Camera2D/CanvasLayer3" unique_id=1351685208]
+texture_filter = 1
+offset_left = 10.0
+offset_top = 12.0
+offset_right = 20.0
+offset_bottom = 22.0
+texture = ExtResource("8_f1ek2")
+stretch_mode = 2
+
+[node name="Label4" type="Label" parent="Camera2D/CanvasLayer3" unique_id=1018529632]
+texture_filter = 1
+offset_left = 8.0
+offset_top = 59.0
+offset_right = 64.0
+offset_bottom = 98.0
+text = "Z to equip/accept
+X to go back/refuse
+C to drop"
+label_settings = SubResource("LabelSettings_fkpbn")
+
+[node name="Sprite0005" type="Sprite2D" parent="Camera2D/CanvasLayer3" unique_id=728056896]
+texture_filter = 1
+position = Vector2(91, 34)
+texture = ExtResource("12_fd4e3")
+
+[node name="Control" type="Control" parent="Camera2D/CanvasLayer3" unique_id=131983001]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Spri6" type="Sprite2D" parent="Camera2D/CanvasLayer3/Control" unique_id=1578535844]
+texture_filter = 1
+position = Vector2(159, 90)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_igrcy")
+
+[node name="Label" type="Label" parent="Camera2D/CanvasLayer3/Control" unique_id=746036531]
+texture_filter = 1
+layout_mode = 0
+offset_left = 138.0
+offset_top = 22.0
+offset_right = 385.0
+offset_bottom = 160.0
+text = "-----------------------------------------------------------------------
+POCKET MEDI-D.O.S V0.1.0
+
+BLOOD TOXICITY: 8
+BLOOD PRESSURE: 100
+HEART RATE: 74
+PHYSICAL HEALTH: 99.0%
+BRAIN: 100%
+SANITY: 100%
+"
+label_settings = SubResource("LabelSettings_qqo43")
+
+[node name="ColorRect" type="ColorRect" parent="Camera2D/CanvasLayer3/Control" unique_id=295619019]
+material = SubResource("ShaderMaterial_6s3bt")
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 180.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera2D/CanvasLayer3" unique_id=1110450225]
+libraries/ = SubResource("AnimationLibrary_l6n3p")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera2D" unique_id=836343381]
 visible = false
@@ -56,9 +573,9 @@ offset_bottom = 180.0
 texture_filter = 1
 layout_mode = 0
 offset_left = 5.0
-offset_top = 111.0
+offset_top = 114.0
 offset_right = 315.0
-offset_bottom = 177.0
+offset_bottom = 176.0
 texture = ExtResource("2_x3wgy")
 region_rect = Rect2(0, 0, 30, 30)
 patch_margin_left = 4
@@ -68,10 +585,10 @@ patch_margin_bottom = 4
 
 [node name="Label3" type="Label" parent="Camera2D/CanvasLayer/Control" unique_id=2086888974]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 116.0
-offset_right = 298.0
-offset_bottom = 172.0
+offset_left = 13.0
+offset_top = 120.0
+offset_right = 295.0
+offset_bottom = 176.0
 text = "*"
 label_settings = SubResource("LabelSettings_q6r6c")
 autowrap_mode = 3
@@ -79,11 +596,11 @@ visible_characters_behavior = 1
 
 [node name="Label" type="Label" parent="Camera2D/CanvasLayer/Control" unique_id=2052251336]
 layout_mode = 0
-offset_left = 27.0
-offset_top = 115.0
-offset_right = 309.0
-offset_bottom = 174.0
-text = "aaaaaaaaaaaaaaaaaaaaaa yfytfytaaaaaaaaaaaaaaaaaaaaaaaaaa a a a a aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+offset_left = 25.0
+offset_top = 119.0
+offset_right = 307.0
+offset_bottom = 193.0
+text = "aaaaaaaaaaaaaaaaaaaaaa yfytfytaaaaaaaaaaaaaaaaaaaaaaaaaa a a a a aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 label_settings = SubResource("LabelSettings_q6r6c")
 autowrap_mode = 3
 visible_characters_behavior = 1
@@ -92,23 +609,69 @@ visible_characters_behavior = 1
 
 [node name="PB" type="TextureProgressBar" parent="Camera2D/CanvasLayer2" unique_id=1984604471]
 texture_filter = 1
-offset_left = 291.0
-offset_top = 2.0
-offset_right = 318.0
-offset_bottom = 7.0
-value = 50.0
+offset_left = 283.0
+offset_top = 4.0
+offset_right = 314.0
+offset_bottom = 10.0
+value = 100.0
+fill_mode = 6
 nine_patch_stretch = true
-stretch_margin_left = 1
-stretch_margin_top = 1
-stretch_margin_right = 1
-stretch_margin_bottom = 1
-texture_progress = ExtResource("2_x3wgy")
+stretch_margin_left = 3
+stretch_margin_top = 3
+stretch_margin_right = 3
+stretch_margin_bottom = 3
+texture_progress = ExtResource("6_8erm5")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Camera2D/CanvasLayer2" unique_id=30948917]
+modulate = Color(1, 1, 1, 0.22352941)
+texture_filter = 1
+offset_left = 2.0
+offset_top = 5.0
+offset_right = 44.0
+offset_bottom = 11.0
+nine_patch_stretch = true
+stretch_margin_left = 3
+stretch_margin_top = 3
+stretch_margin_right = 3
+stretch_margin_bottom = 3
+texture_under = ExtResource("13_h4iuc")
+
+[node name="DRUGEFFECTS" type="CanvasLayer" parent="Camera2D" unique_id=61992609]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Camera2D/DRUGEFFECTS" unique_id=867221056]
+visible = false
+texture_filter = 1
+offset_left = 136.0
+offset_top = 71.0
+offset_right = 197.0
+offset_bottom = 101.0
+texture = ExtResource("6_8erm5")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+
+[node name="NewNoiseTexture2d" type="Sprite2D" parent="Camera2D/DRUGEFFECTS" unique_id=1139504770]
+visible = false
+material = SubResource("ShaderMaterial_h4iuc")
+position = Vector2(125, 53)
+texture = ExtResource("13_7dp3o")
+
+[node name="ColorRect" type="ColorRect" parent="Camera2D/DRUGEFFECTS" unique_id=223983041]
+visible = false
+offset_left = -49.0
+offset_top = -10.999996
+offset_right = -9.0
+offset_bottom = 29.000004
+scale = Vector2(9.908047, 5.43684)
+color = Color(0.95686275, 1, 1, 0.14901961)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=689252657]
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_0hol4")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1350614159]
+visible = false
 position = Vector2(0, 3)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=684901898]

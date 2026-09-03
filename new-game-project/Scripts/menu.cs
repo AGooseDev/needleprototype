@@ -4,6 +4,7 @@ using System;
 public partial class menu : CanvasLayer
 {
 	// Called when the node enters the scene tree for the first time.
+	public static int[] count = [1,0,1,0];
 	public override void _Ready()
 	{
 	}

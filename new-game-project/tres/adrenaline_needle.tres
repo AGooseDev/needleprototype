@@ -1,9 +1,12 @@
 [gd_resource type="Resource" script_class="inventory_item" format=3 uid="uid://c1aoleohdjjh2"]
 
+[ext_resource type="Texture2D" uid="uid://cuknbbtq4idmx" path="res://Assets/Sprite-0002.png" id="1_gll4o"]
 [ext_resource type="Script" uid="uid://drvkabk7naigj" path="res://Scripts/inventory_item.cs" id="1_o5rcu"]
 
 [resource]
 script = ExtResource("1_o5rcu")
+invicon = ExtResource("1_gll4o")
 is_needle = true
 cc = 5.0
+desc = "Adrenaline - A substance that activates fight or flight. dissorienting visually and etc. in medium amounts it is dangerous..."
 metadata/_custom_type_script = "uid://drvkabk7naigj"

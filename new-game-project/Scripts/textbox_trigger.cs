@@ -1,5 +1,6 @@
 using Godot;
 using Godot.Collections;
+using System;
 using System.Collections.Generic;
 using System.Data;
 
@@ -11,6 +12,7 @@ public partial class textbox_trigger : Godot.Area2D
 	private bool locked = false;
 
 	[Export(PropertyHint.MultilineText, "")] public Godot.Collections.Array<string> txtarr0 = new Godot.Collections.Array<string> { "a"};
+	[Export] public string Fncr {get; set;} = "";
 
 	public override void _Ready()
 	{
