@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="inventory_item" format=3 uid="uid://cjoyjnxa8yhqg"]
+
+[ext_resource type="Script" uid="uid://drvkabk7naigj" path="res://Scripts/inventory_item.cs" id="1_ddioi"]
+[ext_resource type="Texture2D" uid="uid://bkfvc5m2gyol0" path="res://Assets/mns.png" id="1_og846"]
+
+[resource]
+script = ExtResource("1_ddioi")
+id = 4
+invicon = ExtResource("1_og846")
+is_needle = true
+desc = "Kenadine - A miraculous compound that accelerates physical healing, but skyrockets your blood pressure."
+pid = 2
+metadata/_custom_type_script = "uid://drvkabk7naigj"

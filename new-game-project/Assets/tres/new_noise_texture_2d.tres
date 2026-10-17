@@ -3,9 +3,11 @@
 [sub_resource type="Gradient" id="Gradient_k1g26"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_eysnu"]
+noise_type = 3
 frequency = 0.055
 
 [resource]
 noise = SubResource("FastNoiseLite_eysnu")
 color_ramp = SubResource("Gradient_k1g26")
 seamless = true
+normalize = false

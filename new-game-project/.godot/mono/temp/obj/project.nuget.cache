@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "3z455ZSg3EI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sree Amman Exports\\Documents\\new-game-project\\New Game Project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sree Amman Exports\\.nuget\\packages\\godot.sourcegenerators\\4.7.0\\godot.sourcegenerators.4.7.0.nupkg.sha512",
+    "C:\\Users\\Sree Amman Exports\\.nuget\\packages\\godotsharp\\4.7.0\\godotsharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Sree Amman Exports\\.nuget\\packages\\godotsharpeditor\\4.7.0\\godotsharpeditor.4.7.0.nupkg.sha512",
+    "C:\\Users\\Sree Amman Exports\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.28\\microsoft.netcore.app.ref.8.0.28.nupkg.sha512",
+    "C:\\Users\\Sree Amman Exports\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.28\\microsoft.windowsdesktop.app.ref.8.0.28.nupkg.sha512",
+    "C:\\Users\\Sree Amman Exports\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.28\\microsoft.aspnetcore.app.ref.8.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}

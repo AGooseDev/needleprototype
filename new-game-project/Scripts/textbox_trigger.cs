@@ -44,7 +44,7 @@ public partial class textbox_trigger : Godot.Area2D
 			if (i.GetParent().Name == "Player")
 			{
 				
-				if (character_body_2d.state == 0 && zHeld)
+				if (character_body_2d.state == 0 && zHeld && ((character_body_2d.charge_time < (character_body_2d.max_charge_time)/3)))
 				{					
 					character_body_2d.Instance.Txtarr0 = txtarr0;
 					character_body_2d.state = 1;

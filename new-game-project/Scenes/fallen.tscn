@@ -5,6 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://cirqukvjm4gn1" path="res://Assets/SND/FALLEN.ogg" id="2_hjfws"]
 [ext_resource type="FontFile" uid="uid://cabcg3lbcsst3" path="res://Assets/fonts/editundo.ttf" id="3_aaj6k"]
 [ext_resource type="Texture2D" uid="uid://b7k6kvvjnshid" path="res://Assets/pointer.png" id="4_v4urd"]
+[ext_resource type="Shader" uid="uid://cd1hlkjql6s8" path="res://Assets/shaders/crt.gdshader" id="6_xjidt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_6s3bt"]
 font = ExtResource("3_aaj6k")
@@ -22,7 +23,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(0, 0, 0, 0)]
+"values": [Color(0, 0, 0, 1)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -88,6 +89,30 @@ _data = {
 &"new_animation_2": SubResource("Animation_v4urd")
 }
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6s3bt"]
+shader = ExtResource("6_xjidt")
+shader_parameter/overlay = true
+shader_parameter/scanlines_opacity = 0.0
+shader_parameter/scanlines_width = 0.0
+shader_parameter/grille_opacity = 0.326000015485
+shader_parameter/resolution = Vector2(640, 480)
+shader_parameter/pixelate = false
+shader_parameter/roll = false
+shader_parameter/roll_speed = 8.0
+shader_parameter/roll_size = 10.878000516705
+shader_parameter/roll_variation = 3.09500014375262
+shader_parameter/distort_intensity = 0.05
+shader_parameter/noise_opacity = 0.3230000153425
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.0
+shader_parameter/aberration = 0.00500004773750006
+shader_parameter/brightness = 1.4
+shader_parameter/discolor = false
+shader_parameter/warp_amount = 0.4190000199025
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.5
+
 [node name="FALLEN" type="Node2D" unique_id=654287642]
 script = ExtResource("1_v4urd")
 
@@ -107,7 +132,7 @@ offset_left = 107.0
 offset_top = 135.0
 offset_right = 205.0
 offset_bottom = 158.0
-text = "GET UP    QUIT"
+text = "GET UP    LET GO"
 label_settings = SubResource("LabelSettings_6s3bt")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1117439587]
@@ -124,7 +149,12 @@ texture = ExtResource("4_v4urd")
 root_node = NodePath("../ColorRect2")
 libraries/ = SubResource("AnimationLibrary_aaj6k")
 
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=840659771]
+material = SubResource("ShaderMaterial_6s3bt")
+offset_right = 320.0
+offset_bottom = 180.0
+
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=135341718]
 offset_right = 320.0
 offset_bottom = 180.0
-color = Color(0, 0, 0, 0)
+color = Color(0, 0, 0, 1)

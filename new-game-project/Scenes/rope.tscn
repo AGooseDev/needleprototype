@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://v4a82j07lg67"]
+
+[ext_resource type="Script" uid="uid://cqr45ygri8342" path="res://Scenes/Rope.cs" id="1_aw0jv"]
+[ext_resource type="Texture2D" uid="uid://cj6hdioyns6tw" path="res://Assets/R_ROPE.png" id="2_qawu5"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_6s3bt"]
+friction = 200.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6s3bt"]
+radius = 2.0
+height = 4.0
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3ket1"]
+friction = 200.0
+
+[node name="Node2D" type="Node2D" unique_id=1927099062]
+texture_filter = 1
+script = ExtResource("1_aw0jv")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=981450518]
+mass = 2.0
+physics_material_override = SubResource("PhysicsMaterial_6s3bt")
+gravity_scale = 0.0
+freeze = true
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=1273976997]
+texture = ExtResource("2_qawu5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1152911619]
+shape = SubResource("CapsuleShape2D_6s3bt")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="RigidBody2D" unique_id=1469580966]
+node_a = NodePath("..")
+node_b = NodePath("../../RigidBody2D2")
+softness = 0.1
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="." unique_id=36759189]
+position = Vector2(0, 5)
+mass = 2.0
+physics_material_override = SubResource("PhysicsMaterial_3ket1")
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D2" unique_id=818032282]
+shape = SubResource("CapsuleShape2D_6s3bt")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D2" unique_id=1082452186]
+texture = ExtResource("2_qawu5")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="RigidBody2D2" unique_id=1396233563]
+softness = 0.1

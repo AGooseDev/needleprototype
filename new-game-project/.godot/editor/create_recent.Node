@@ -1,0 +1,14 @@
+ColorRect
+TileMapLayer
+Sprite2D
+PinJoint2D
+DampedSpringJoint2D
+CollisionShape2D
+RigidBody2D
+Node2D
+DirectionalLight2D
+LightOccluder2D
+PointLight2D
+Label
+NinePatchRect
+AudioStreamPlayer

@@ -1,28 +1,134 @@
 [gd_scene format=3 uid="uid://be8qbmt0fe144"]
 
 [ext_resource type="Script" uid="uid://cevbmef8hk5um" path="res://Scripts/character_body_2d.cs" id="1_vgqql"]
-[ext_resource type="Script" uid="uid://drvkabk7naigj" path="res://Scripts/inventory_item.cs" id="2_igrcy"]
-[ext_resource type="Texture2D" uid="uid://u210uostq0s8" path="res://Assets/B.png" id="2_vgqql"]
+[ext_resource type="Script" uid="uid://drvkabk7naigj" path="res://Scripts/inventory_item.cs" id="2_wpjfl"]
 [ext_resource type="Texture2D" uid="uid://bv26cqnf8kp03" path="res://Assets/txt.png" id="2_x3wgy"]
 [ext_resource type="FontFile" uid="uid://cabcg3lbcsst3" path="res://Assets/fonts/editundo.ttf" id="3_3smsa"]
 [ext_resource type="Script" uid="uid://bk28f7rwkkbjx" path="res://Scripts/inventory.cs" id="3_8erm5"]
 [ext_resource type="Script" uid="uid://12w1omfjyukx" path="res://Scripts/player_cam.cs" id="3_fkybt"]
 [ext_resource type="Resource" uid="uid://c1aoleohdjjh2" path="res://tres/adrenaline_needle.tres" id="3_tx1dd"]
+[ext_resource type="Resource" uid="uid://8k1h5mh76ola" path="res://tres/COMT.tres" id="4_l6n3p"]
+[ext_resource type="Resource" uid="uid://cjoyjnxa8yhqg" path="res://tres/Kenadine.tres" id="5_l6n3p"]
 [ext_resource type="Texture2D" uid="uid://bgw0yj85sep2g" path="res://Assets/zosiawalk.png" id="6_7dp3o"]
 [ext_resource type="Texture2D" uid="uid://bkfvc5m2gyol0" path="res://Assets/mns.png" id="6_8erm5"]
 [ext_resource type="Texture2D" uid="uid://b7k6kvvjnshid" path="res://Assets/pointer.png" id="8_f1ek2"]
 [ext_resource type="FontFile" uid="uid://grogek16j5ts" path="res://Assets/fonts/DePixelHalbfett.ttf" id="10_gymyn"]
 [ext_resource type="Texture2D" uid="uid://cotcyooit8o1m" path="res://Assets/Sprite-0005.png" id="12_fd4e3"]
 [ext_resource type="Shader" uid="uid://dm34gfy7b51tk" path="res://Assets/shaders/new_shader.gdshader" id="12_ukyrk"]
-[ext_resource type="Texture2D" uid="uid://bocvy8gaiexow" path="res://Assets/tres/new_noise_texture_2d.tres" id="13_7dp3o"]
 [ext_resource type="Texture2D" uid="uid://corbfa07uh26y" path="res://Assets/PBR.png" id="13_h4iuc"]
 [ext_resource type="Texture2D" uid="uid://drp8hiljqnwd7" path="res://Assets/Spri6.png" id="13_igrcy"]
 [ext_resource type="Shader" uid="uid://cd1hlkjql6s8" path="res://Assets/shaders/crt.gdshader" id="13_qqcod"]
+[ext_resource type="Shader" uid="uid://dmrjejov424tb" path="res://Assets/shaders/doublev.gdshader" id="19_fs7ks"]
+[ext_resource type="Shader" uid="uid://deiyeiibocot4" path="res://Assets/shaders/Kenadine.gdshader" id="19_olqyp"]
+[ext_resource type="Shader" uid="uid://cx0ggf20m4kw6" path="res://Assets/shaders/kena.gdshader" id="22_bi64h"]
+[ext_resource type="Script" uid="uid://cly3x5osyw1u" path="res://Scripts/FPSLABEL.cs" id="22_wpjfl"]
+[ext_resource type="Texture2D" uid="uid://bl0030qk33mwo" path="res://Assets/FX033_01-Recovered-sheet.png" id="23_bi64h"]
 
 [sub_resource type="Resource" id="Resource_iq1sc"]
 script = ExtResource("3_8erm5")
-inv = Array[ExtResource("2_igrcy")]([ExtResource("3_tx1dd"), null, ExtResource("3_tx1dd"), null])
+inv = Array[ExtResource("2_wpjfl")]([ExtResource("3_tx1dd"), ExtResource("4_l6n3p"), ExtResource("3_tx1dd"), ExtResource("5_l6n3p")])
 metadata/_custom_type_script = "uid://bk28f7rwkkbjx"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmr2m"]
+atlas = ExtResource("23_bi64h")
+region = Rect2(0, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ax3m3"]
+atlas = ExtResource("23_bi64h")
+region = Rect2(128, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3vlem"]
+atlas = ExtResource("23_bi64h")
+region = Rect2(256, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8eeqe"]
+atlas = ExtResource("23_bi64h")
+region = Rect2(384, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5x828"]
+atlas = ExtResource("23_bi64h")
+region = Rect2(512, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1k8q"]
+atlas = ExtResource("23_bi64h")
+region = Rect2(640, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e6mvm"]
+atlas = ExtResource("23_bi64h")
+region = Rect2(768, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57lvd"]
+atlas = ExtResource("23_bi64h")
+region = Rect2(896, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ie7r7"]
+atlas = ExtResource("23_bi64h")
+region = Rect2(1024, 0, 128, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vq3lt"]
+atlas = ExtResource("23_bi64h")
+region = Rect2(1152, 0, 128, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6s3bt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nmr2m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ax3m3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3vlem")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8eeqe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5x828")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c1k8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e6mvm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57lvd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ie7r7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vq3lt")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": 0,
+"name": &"new_animation",
+"speed": 20.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n1x1j"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pukcj"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(2432, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nv4vc"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(2176, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h4iuc"]
 atlas = ExtResource("6_7dp3o")
@@ -39,6 +145,14 @@ region = Rect2(256, 0, 128, 128)
 [sub_resource type="AtlasTexture" id="AtlasTexture_igrcy"]
 atlas = ExtResource("6_7dp3o")
 region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gxox"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(2048, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11gg7"]
+atlas = ExtResource("6_7dp3o")
+region = Rect2(2304, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fs7ks"]
 atlas = ExtResource("6_7dp3o")
@@ -108,10 +222,64 @@ region = Rect2(896, 0, 128, 128)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_vgqql")
+"texture": SubResource("AtlasTexture_n1x1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1x1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1x1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1x1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1x1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1x1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1x1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1x1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1x1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1x1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1x1j")
+}],
+"loop": 0,
+"name": &"NEEDLESTAB",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pukcj")
+}],
+"loop": 1,
+"name": &"dd",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1x1j")
 }],
 "loop": 1,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nv4vc")
+}],
+"loop": 1,
+"name": &"dl",
 "speed": 5.0
 }, {
 "frames": [{
@@ -129,6 +297,22 @@ animations = [{
 }],
 "loop": 1,
 "name": &"down",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gxox")
+}],
+"loop": 1,
+"name": &"dr",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_11gg7")
+}],
+"loop": 1,
+"name": &"du",
 "speed": 5.0
 }, {
 "frames": [{
@@ -145,7 +329,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"idleleft",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -178,7 +362,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"left",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -195,7 +379,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"right",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -212,7 +396,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"up",
-"speed": 5.0
+"speed": 6.0
 }]
 
 [sub_resource type="LabelSettings" id="LabelSettings_q6r6c"]
@@ -229,8 +413,14 @@ font = ExtResource("3_3smsa")
 font_size = 14
 
 [sub_resource type="LabelSettings" id="LabelSettings_fkpbn"]
+line_spacing = 2.0
+font = ExtResource("3_3smsa")
+font_size = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_3kkp6"]
 font = ExtResource("10_gymyn")
 font_size = 5
+font_color = Color(0.6, 0.6901961, 0.33333334, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_qqo43"]
 font = ExtResource("10_gymyn")
@@ -261,45 +451,38 @@ shader_parameter/clip_warp = false
 shader_parameter/vignette_intensity = 0.4
 shader_parameter/vignette_opacity = 0.5
 
-[sub_resource type="Animation" id="Animation_igrcy"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Control:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qqo43"]
+shader = ExtResource("19_olqyp")
+shader_parameter/effect_amount = -0.2749998943124998
 
-[sub_resource type="Animation" id="Animation_fs7ks"]
-resource_name = "new_animation"
-length = 7.733333
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Control:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.23333333),
-"transitions": PackedFloat32Array(3.1383414, 0.3186409),
-"update": 0,
-"values": [Vector2(0, 180), Vector2(1, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_l6n3p"]
-_data = {
-&"RESET": SubResource("Animation_igrcy"),
-&"new_animation": SubResource("Animation_fs7ks")
-}
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_h4iuc"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fkpbn"]
 shader = ExtResource("12_ukyrk")
+shader_parameter/shaking = true
+shader_parameter/amplitude = 17.0
+shader_parameter/noise_scale = 30.0
+shader_parameter/noise_speed = 1.0
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_olqyp"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_l6n3p"]
+width = 600
+height = 600
+noise = SubResource("FastNoiseLite_olqyp")
+seamless = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3ket1"]
+shader = ExtResource("19_fs7ks")
+shader_parameter/pixel_size = 1.0
+shader_parameter/vhs_intensity = 1.9600000931
+shader_parameter/opacity = 0.4750000225625
+shader_parameter/double_vision_split = 0.010000000475
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ee54g"]
+shader = ExtResource("22_bi64h")
+shader_parameter/glow_color = Color(1, 0.9, 0.5, 1)
+shader_parameter/intensity = 0.7190000341525
+shader_parameter/spread = 0.72600003122512
+shader_parameter/pulse_speed = 3.442000163495
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
 size = Vector2(15, 14)
@@ -307,15 +490,32 @@ size = Vector2(15, 14)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3ket1"]
 size = Vector2(10.90909, 14.545454)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_6s3bt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ee54g"]
+font = ExtResource("3_3smsa")
+font_size = 10
+
 [node name="Player" type="CharacterBody2D" unique_id=766630638 groups=["Player"]]
+position = Vector2(0, 6)
+collision_mask = 5
 script = ExtResource("1_vgqql")
 inv = SubResource("Resource_iq1sc")
+
+[node name="Node" type="Node" parent="." unique_id=835464564]
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Node" unique_id=1275262814]
+z_index = -1
+texture_filter = 1
+position = Vector2(0, 9)
+sprite_frames = SubResource("SpriteFrames_6s3bt")
+animation = &"new_animation"
+offset = Vector2(-28, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1647182195]
 texture_filter = 1
 position = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_q6r6c")
-animation = &"idledown"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=64283420]
 position = Vector2(1, -1)
@@ -337,6 +537,7 @@ patch_margin_left = 3
 patch_margin_top = 3
 patch_margin_right = 3
 patch_margin_bottom = 3
+metadata/_edit_use_anchors_ = true
 
 [node name="Label3" type="Label" parent="Camera2D/CanvasLayer3" unique_id=1300410926]
 texture_filter = 1
@@ -346,11 +547,11 @@ offset_right = 72.0
 offset_bottom = 74.0
 text = "BAG
 medi.
-AZZI
-"
+txts"
 label_settings = SubResource("LabelSettings_q6r6c")
 autowrap_mode = 3
 visible_characters_behavior = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="slt" type="NinePatchRect" parent="Camera2D/CanvasLayer3" unique_id=1494156638]
 texture_filter = 1
@@ -363,6 +564,7 @@ patch_margin_left = 3
 patch_margin_top = 3
 patch_margin_right = 3
 patch_margin_bottom = 3
+metadata/_edit_use_anchors_ = true
 
 [node name="Label4" type="Label" parent="Camera2D/CanvasLayer3/slt" unique_id=495215383]
 layout_mode = 0
@@ -373,6 +575,7 @@ text = "0"
 label_settings = SubResource("LabelSettings_q6r6c")
 autowrap_mode = 3
 visible_characters_behavior = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="Camera2D/CanvasLayer3/slt" unique_id=591090402]
 layout_mode = 0
@@ -380,6 +583,7 @@ offset_left = 3.0
 offset_top = 3.0
 offset_right = 21.0
 offset_bottom = 21.0
+metadata/_edit_use_anchors_ = true
 
 [node name="slt2" type="NinePatchRect" parent="Camera2D/CanvasLayer3" unique_id=993318986]
 texture_filter = 1
@@ -392,6 +596,7 @@ patch_margin_left = 3
 patch_margin_top = 3
 patch_margin_right = 3
 patch_margin_bottom = 3
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="Camera2D/CanvasLayer3/slt2" unique_id=118544270]
 layout_mode = 0
@@ -399,6 +604,7 @@ offset_left = 3.0
 offset_top = 3.0
 offset_right = 21.0
 offset_bottom = 21.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Label5" type="Label" parent="Camera2D/CanvasLayer3/slt2" unique_id=725849455]
 layout_mode = 0
@@ -474,7 +680,7 @@ visible_characters_behavior = 1
 offset_top = 122.0
 offset_right = 320.0
 offset_bottom = 180.0
-color = Color(0, 0, 0, 1)
+color = Color(0.061252818, 0.114706896, 0.19608974, 1)
 
 [node name="Label" type="Label" parent="Camera2D/CanvasLayer3" unique_id=677840250]
 texture_filter = 1
@@ -503,6 +709,7 @@ offset_right = 20.0
 offset_bottom = 22.0
 texture = ExtResource("8_f1ek2")
 stretch_mode = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Label4" type="Label" parent="Camera2D/CanvasLayer3" unique_id=1018529632]
 texture_filter = 1
@@ -514,6 +721,7 @@ text = "Z to equip/accept
 X to go back/refuse
 C to drop"
 label_settings = SubResource("LabelSettings_fkpbn")
+metadata/_edit_use_anchors_ = true
 
 [node name="Sprite0005" type="Sprite2D" parent="Camera2D/CanvasLayer3" unique_id=728056896]
 texture_filter = 1
@@ -521,16 +729,77 @@ position = Vector2(91, 34)
 texture = ExtResource("12_fd4e3")
 
 [node name="Control" type="Control" parent="Camera2D/CanvasLayer3" unique_id=131983001]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
-offset_bottom = 40.0
+offset_bottom = 39.99994
 
 [node name="Spri6" type="Sprite2D" parent="Camera2D/CanvasLayer3/Control" unique_id=1578535844]
 texture_filter = 1
 position = Vector2(159, 90)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("13_igrcy")
+
+[node name="Label2" type="Label" parent="Camera2D/CanvasLayer3/Control" unique_id=1598748629]
+texture_filter = 1
+layout_mode = 0
+offset_left = 199.0
+offset_top = 55.0
+offset_right = 239.0
+offset_bottom = 78.0
+text = "NUMBER"
+label_settings = SubResource("LabelSettings_3kkp6")
+
+[node name="Label3" type="Label" parent="Camera2D/CanvasLayer3/Control" unique_id=1764597905]
+texture_filter = 1
+layout_mode = 0
+offset_left = 202.0
+offset_top = 66.0
+offset_right = 242.0
+offset_bottom = 89.0
+text = "NUMBER"
+label_settings = SubResource("LabelSettings_3kkp6")
+
+[node name="Label4" type="Label" parent="Camera2D/CanvasLayer3/Control" unique_id=575340245]
+texture_filter = 1
+layout_mode = 0
+offset_left = 184.0
+offset_top = 77.0
+offset_right = 224.0
+offset_bottom = 100.0
+text = "NUMBER"
+label_settings = SubResource("LabelSettings_3kkp6")
+
+[node name="Label5" type="Label" parent="Camera2D/CanvasLayer3/Control" unique_id=771017415]
+texture_filter = 1
+layout_mode = 0
+offset_left = 204.0
+offset_top = 88.0
+offset_right = 244.0
+offset_bottom = 111.0
+text = "NUMBER"
+label_settings = SubResource("LabelSettings_3kkp6")
+
+[node name="Label6" type="Label" parent="Camera2D/CanvasLayer3/Control" unique_id=65222640]
+texture_filter = 1
+layout_mode = 0
+offset_left = 167.0
+offset_top = 99.0
+offset_right = 207.0
+offset_bottom = 122.0
+text = "NUMBER"
+label_settings = SubResource("LabelSettings_3kkp6")
+
+[node name="Label7" type="Label" parent="Camera2D/CanvasLayer3/Control" unique_id=64987522]
+texture_filter = 1
+layout_mode = 0
+offset_left = 170.0
+offset_top = 110.0
+offset_right = 210.0
+offset_bottom = 133.0
+text = "NUMBER"
+label_settings = SubResource("LabelSettings_3kkp6")
 
 [node name="Label" type="Label" parent="Camera2D/CanvasLayer3/Control" unique_id=746036531]
 texture_filter = 1
@@ -542,12 +811,12 @@ offset_bottom = 160.0
 text = "-----------------------------------------------------------------------
 POCKET MEDI-D.O.S V0.1.0
 
-BLOOD TOXICITY: 8
-BLOOD PRESSURE: 100
-HEART RATE: 74
-PHYSICAL HEALTH: 99.0%
-BRAIN: 100%
-SANITY: 100%
+BLOOD TOXICITY: 
+BLOOD PRESSURE: 
+HEART RATE: 
+PHYSICAL HEALTH: 
+BRAIN: 
+SANITY: 
 "
 label_settings = SubResource("LabelSettings_qqo43")
 
@@ -556,9 +825,6 @@ material = SubResource("ShaderMaterial_6s3bt")
 layout_mode = 0
 offset_right = 320.0
 offset_bottom = 180.0
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera2D/CanvasLayer3" unique_id=1110450225]
-libraries/ = SubResource("AnimationLibrary_l6n3p")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera2D" unique_id=836343381]
 visible = false
@@ -584,6 +850,7 @@ patch_margin_right = 4
 patch_margin_bottom = 4
 
 [node name="Label3" type="Label" parent="Camera2D/CanvasLayer/Control" unique_id=2086888974]
+texture_filter = 1
 layout_mode = 0
 offset_left = 13.0
 offset_top = 120.0
@@ -595,6 +862,7 @@ autowrap_mode = 3
 visible_characters_behavior = 1
 
 [node name="Label" type="Label" parent="Camera2D/CanvasLayer/Control" unique_id=2052251336]
+texture_filter = 1
 layout_mode = 0
 offset_left = 25.0
 offset_top = 119.0
@@ -604,6 +872,8 @@ text = "aaaaaaaaaaaaaaaaaaaaaa yfytfytaaaaaaaaaaaaaaaaaaaaaaaaaa a a a a aaaaaaa
 label_settings = SubResource("LabelSettings_q6r6c")
 autowrap_mode = 3
 visible_characters_behavior = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Camera2D/CanvasLayer/Control" unique_id=489049352]
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="Camera2D" unique_id=254387092]
 
@@ -635,8 +905,25 @@ stretch_margin_top = 3
 stretch_margin_right = 3
 stretch_margin_bottom = 3
 texture_under = ExtResource("13_h4iuc")
+metadata/_edit_use_anchors_ = true
 
 [node name="DRUGEFFECTS" type="CanvasLayer" parent="Camera2D" unique_id=61992609]
+
+[node name="ColorRect3" type="ColorRect" parent="Camera2D/DRUGEFFECTS" unique_id=352697293]
+visible = false
+material = SubResource("ShaderMaterial_qqo43")
+anchors_preset = -1
+anchor_right = 1.0480001
+anchor_bottom = 1.069
+offset_right = -284.9167
+offset_bottom = -146.15494
+scale = Vector2(6.34375, 3.890625)
+
+[node name="NewNoiseTexture2d" type="Sprite2D" parent="Camera2D/DRUGEFFECTS" unique_id=883580069]
+visible = false
+material = SubResource("ShaderMaterial_fkpbn")
+position = Vector2(70, 66)
+texture = SubResource("NoiseTexture2D_l6n3p")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="Camera2D/DRUGEFFECTS" unique_id=867221056]
 visible = false
@@ -651,12 +938,6 @@ patch_margin_top = 3
 patch_margin_right = 3
 patch_margin_bottom = 3
 
-[node name="NewNoiseTexture2d" type="Sprite2D" parent="Camera2D/DRUGEFFECTS" unique_id=1139504770]
-visible = false
-material = SubResource("ShaderMaterial_h4iuc")
-position = Vector2(125, 53)
-texture = ExtResource("13_7dp3o")
-
 [node name="ColorRect" type="ColorRect" parent="Camera2D/DRUGEFFECTS" unique_id=223983041]
 visible = false
 offset_left = -49.0
@@ -665,6 +946,54 @@ offset_right = -9.0
 offset_bottom = 29.000004
 scale = Vector2(9.908047, 5.43684)
 color = Color(0.95686275, 1, 1, 0.14901961)
+
+[node name="ColorRect2" type="ColorRect" parent="Camera2D/DRUGEFFECTS" unique_id=1462068285]
+visible = false
+material = SubResource("ShaderMaterial_3ket1")
+offset_right = 327.0
+offset_bottom = 181.0
+
+[node name="NinePatchRect2" type="NinePatchRect" parent="Camera2D/DRUGEFFECTS" unique_id=1152564308]
+visible = false
+texture_filter = 1
+offset_left = 145.0
+offset_top = 72.0
+offset_right = 195.0
+offset_bottom = 109.0
+texture = ExtResource("6_8erm5")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+
+[node name="NinePatchRect4" type="NinePatchRect" parent="Camera2D/DRUGEFFECTS/NinePatchRect2" unique_id=11717778]
+texture_filter = 1
+layout_mode = 0
+offset_left = 3.0
+offset_top = 7.0
+offset_right = 47.0
+offset_bottom = 16.0
+texture = ExtResource("13_h4iuc")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+
+[node name="Label" type="Label" parent="Camera2D/DRUGEFFECTS/NinePatchRect2" unique_id=584467272]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 21.0
+offset_right = 46.0
+offset_bottom = 44.0
+text = "fight?"
+label_settings = SubResource("LabelSettings_q6r6c")
+
+[node name="ColorRect4" type="ColorRect" parent="Camera2D/DRUGEFFECTS" unique_id=180918682]
+visible = false
+texture_filter = 1
+material = SubResource("ShaderMaterial_ee54g")
+offset_right = 320.0
+offset_bottom = 180.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=689252657]
 position = Vector2(0, 3)
@@ -679,3 +1008,40 @@ position = Vector2(0, -2.3841858e-07)
 scale = Vector2(1.1, 1.1)
 shape = SubResource("RectangleShape2D_3ket1")
 debug_color = Color(0.9564633, 0, 0.5403765, 0.41960785)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1113706995]
+volume_db = -10.714
+
+[node name="psh" type="Area2D" parent="." unique_id=1046926676]
+position = Vector2(-11, 3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="psh" unique_id=576975599]
+position = Vector2(11, 0)
+shape = SubResource("CircleShape2D_6s3bt")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=785754211]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1238564018]
+texture_filter = 1
+offset_left = 300.0
+offset_top = 14.0
+offset_right = 340.0
+offset_bottom = 37.0
+text = "144"
+label_settings = SubResource("LabelSettings_ee54g")
+script = ExtResource("22_wpjfl")
+
+[node name="Label2" type="Label" parent="CanvasLayer" unique_id=69054299]
+texture_filter = 1
+offset_left = 280.0
+offset_top = 14.0
+offset_right = 320.0
+offset_bottom = 37.0
+text = "FPS:"
+label_settings = SubResource("LabelSettings_ee54g")
+
+[node name="Timer" type="Timer" parent="." unique_id=751254579]
+wait_time = 0.416
+
+[node name="DASHTIMER" type="Timer" parent="." unique_id=861916365]
+wait_time = 0.214

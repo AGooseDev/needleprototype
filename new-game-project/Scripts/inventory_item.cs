@@ -16,14 +16,11 @@ public partial class inventory_item : Resource
 public enum ITEM_ID
 {
 	adrenaline_needle,
-	noepinephrine,
-	Benzodiazepine,
-	Flumazenil,
+	COMT,
 
 	NitricOxide,
 
 	Risperidone,
-	propanonol,
-
-	adraphetacaf, //made up unholy concoction of adrenaline, amphetamines and caffine cause AAAAAAAAAAAAAAAAAAAAA
+	Kenadine,
+	COMAD
 }

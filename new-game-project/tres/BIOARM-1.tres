@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="inventory_item" format=3 uid="uid://cl32wvovaowde"]
+
+[ext_resource type="Script" uid="uid://drvkabk7naigj" path="res://Scripts/inventory_item.cs" id="1_gn40j"]
+
+[resource]
+script = ExtResource("1_gn40j")
+is_needle = true
+desc = "* BIO-ARM! INSTA GROW A QUICK AND EASY REGENERATIVE HAND ON YOUR HEAD! IN TRYING TIMES! FOR ANY HI STAKES SITUATION! USE IT IN ANYTHING, COFFEE NEEDLES PILLS THE WORKS (NOT SPONSORED BY NONMOLONOS CORPORORATION)"
+metadata/_custom_type_script = "uid://drvkabk7naigj"

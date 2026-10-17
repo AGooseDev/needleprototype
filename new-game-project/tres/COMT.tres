@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="inventory_item" format=3 uid="uid://8k1h5mh76ola"]
+
+[ext_resource type="Texture2D" uid="uid://corbfa07uh26y" path="res://Assets/PBR.png" id="1_4pbmi"]
+[ext_resource type="Script" uid="uid://drvkabk7naigj" path="res://Scripts/inventory_item.cs" id="1_o3amq"]
+
+[resource]
+script = ExtResource("1_o3amq")
+id = 2
+invicon = ExtResource("1_4pbmi")
+is_needle = true
+desc = "* uhhhh"
+pid = 3
+metadata/_custom_type_script = "uid://drvkabk7naigj"

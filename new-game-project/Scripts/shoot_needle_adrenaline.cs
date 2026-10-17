@@ -1,11 +1,13 @@
 using Godot;
 using System;
+using System.ComponentModel;
 
 //shit
-public partial class shoot_needle_adrenaline : Sprite2D
+public partial class shoot_needle_adrenaline : CharacterBody2D
 {
 	//im genuinly considering making my variables straight up emojis
 	[Export] public float spd = 300.0f;
+	[Export] public int effect = 0;
 	public override void _Ready()
 	{
 		//this is utterly dumb
